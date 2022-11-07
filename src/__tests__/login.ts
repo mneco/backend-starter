@@ -1,5 +1,5 @@
-import axios from "axios";
-import MockAdapter from "axios-mock-adapter";
+// import axios from "axios";
+// import MockAdapter from "axios-mock-adapter";
 import { Server } from "http";
 import * as shutdown from "http-graceful-shutdown";
 import { MongoMemoryServer } from "mongodb-memory-server";
@@ -13,7 +13,8 @@ import runApp from "@/helpers/runApp";
 jest.mock("@/helpers/getGoogleUser");
 
 describe("Login endpoint", () => {
-	const axiosMock = new MockAdapter(axios);
+	// const instance = axios.create();
+	// const axiosMock = new MockAdapter(instance);
 
 	let server: Server;
 	let mongoServer: MongoMemoryServer;
